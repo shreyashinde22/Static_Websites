@@ -1,0 +1,34 @@
+.bg-image {
+    background-image: url("https://www.pexels.com/photo/people-holding-gift-boxes-while-standing-on-street-1234567/"); /* Replace with actual image URL */
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg2-image {
+    background-image: url("https://www.pexels.com/photo/people-shopping-in-mall-2345678/"); /* Replace with actual image URL */
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+}
+
+p {
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.btn {
+    background-color: #ff5722;
+    border-color: #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 5px;
+}

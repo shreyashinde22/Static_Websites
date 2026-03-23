@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand logo-styles" href="#">S.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse m-auto" id="navbarNav">
+        <div class="navbar-nav m-auto">
+            <a class="nav-link active" href="#" onclick="display('home')">Home</a>
+            <a class="nav-link" href="#" onclick="display('about')">About</a>
+            <a class="nav-link" href="#" onclick="display('projects')">Projects</a>
+            <a class="nav-link" href="#" onclick="display('skills')">Skills</a>
+            <a class="nav-link" href="#" onclick="display('contact')">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<div id="home" class="section d-flex flex-column justify-content-center align-items-center">
+    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="home-img">
+    <h1 class="heading">Hi, I'm Shreya</h1>
+    <p class="para text-center">I build responsive and interactive websites using HTML, CSS, and Bootstrap.</p>
+    <button class="btn btn-primary" onclick="display('projects')">View Projects</button>
+</div>
+
+<!-- About Section -->
+<div id="about" class="section d-flex flex-column justify-content-center align-items-center" style="display:none;">
+    <h1 class="heading">About Me</h1>
+    <p class="para text-center">I'm a passionate front-end developer, learning and building projects to showcase my skills. I love creating beautiful and functional web interfaces.</p>
+    <button class="btn btn-secondary" onclick="display('home')">Back</button>
+</div>
+
+<!-- Projects Section -->
+<div id="projects" class="section d-flex flex-column justify-content-center align-items-center" style="display:none;">
+    <h1 class="heading">My Projects</h1>
+    <div class="d-flex flex-wrap justify-content-center">
+        <div class="card m-3" style="width: 18rem;">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">Food App</h5>
+                <p class="card-text">A static food website built using HTML, CSS, and Bootstrap.</p>
+                <button class="btn btn-primary" onclick="display('home')">Back</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="card-img-top">
+            <div class="card-body text-center">
+                <h5 class="card-title">News App</h5>
+                <p class="card-text">A responsive news portal project showcasing latest news.</p>
+                <button class="btn btn-primary" onclick="display('home')">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div id="skills" class="section d-flex flex-column justify-content-center align-items-center" style="display:none;">
+    <h1 class="heading">My Skills</h1>
+    <p class="para text-center">HTML, CSS, Bootstrap, JavaScript, React (learning)</p>
+    <button class="btn btn-secondary" onclick="display('home')">Back</button>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="section d-flex flex-column justify-content-center align-items-center" style="display:none;">
+    <h1 class="heading">Contact Me</h1>
+    <p class="para text-center">Email: shreya@example.com | Phone: +91-1234567890</p>
+    <div class="d-flex flex-row">
+        <a href="#" class="m-2">Facebook</a>
+        <a href="#" class="m-2">Twitter</a>
+        <a href="#" class="m-2">Instagram</a>
+    </div>
+    <button class="btn btn-secondary" onclick="display('home')">Back</button>
+</div>
+
+<script>
+function display(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => sec.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'flex';
+}
+</script>
+
+</body>
+</html>
