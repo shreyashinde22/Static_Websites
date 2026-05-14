@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <link rel="stylesheet" href="job_application.css">
+</head>
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </section>
+
+            <section>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </section>
+
+            <section>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </section>
+
+            <section>
+                <label for="position">Position Applied For</label>
+
+                <select id="position">
+                    <option>Select Position</option>
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>UI/UX Designer</option>
+                    <option>Software Engineer</option>
+                </select>
+            </section>
+
+            <section>
+                <label for="skills">Skills</label>
+
+                <textarea id="skills" placeholder="Enter your skills"></textarea>
+            </section>
+
+            <section>
+                <label for="resume">Upload Resume</label>
+
+                <input type="file" id="resume">
+            </section>
+
+            <section>
+                <label for="cover">Cover Letter</label>
+
+                <textarea id="cover" placeholder="Write your cover letter"></textarea>
+            </section>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

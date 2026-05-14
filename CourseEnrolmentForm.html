@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Form</title>
+
+    <link rel="stylesheet" href="CourseEnrollmentForm.css">
+</head>
+<body>
+
+    <header>
+        <h1>Course Enrollment Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input 
+                    type="text" 
+                    id="name"
+                    placeholder="Enter your name"
+                >
+            </section>
+
+            <section>
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Enter your email"
+                >
+            </section>
+
+            <section>
+                <label for="course">
+                    Select Course
+                </label>
+
+                <select id="course">
+                    <option>Select Course</option>
+                    <option>Web Development</option>
+                    <option>Data Science</option>
+                    <option>Cyber Security</option>
+                    <option>Artificial Intelligence</option>
+                </select>
+            </section>
+
+            <section>
+                <label for="duration">
+                    Course Duration
+                </label>
+
+                <select id="duration">
+                    <option>Select Duration</option>
+                    <option>3 Months</option>
+                    <option>6 Months</option>
+                    <option>1 Year</option>
+                </select>
+            </section>
+
+            <section>
+                <p>Choose Specializations</p>
+
+                <article>
+                    <input type="checkbox" id="frontend">
+
+                    <label for="frontend">
+                        Frontend Development
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="backend">
+
+                    <label for="backend">
+                        Backend Development
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="database">
+
+                    <label for="database">
+                        Database Management
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="cloud">
+
+                    <label for="cloud">
+                        Cloud Computing
+                    </label>
+                </article>
+
+            </section>
+
+            <button type="submit">
+                Enroll Now
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

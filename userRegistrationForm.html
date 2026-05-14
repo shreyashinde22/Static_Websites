@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+
+    <link rel="stylesheet" href="userRegistrationForm.css">
+</head>
+<body>
+
+    <header>
+        <h1>User Registration Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="fullname">
+                    Full Name
+                </label>
+
+                <input 
+                    type="text" 
+                    id="fullname"
+                    placeholder="Enter full name"
+                >
+            </section>
+
+            <section>
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input 
+                    type="email" 
+                    id="email"
+                    placeholder="Enter email"
+                >
+            </section>
+
+            <section>
+                <label for="password">
+                    Password
+                </label>
+
+                <input 
+                    type="password" 
+                    id="password"
+                    placeholder="Enter password"
+                >
+            </section>
+
+            <section>
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input 
+                    type="tel" 
+                    id="phone"
+                    placeholder="Enter phone number"
+                >
+            </section>
+
+            <section>
+                <label for="age">
+                    Age
+                </label>
+
+                <input 
+                    type="number" 
+                    id="age"
+                    placeholder="Enter age"
+                >
+            </section>
+
+            <section>
+                <label for="birthdate">
+                    Date of Birth
+                </label>
+
+                <input 
+                    type="date" 
+                    id="birthdate"
+                >
+            </section>
+
+            <section>
+                <label>
+                    Gender
+                </label>
+
+                <article>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </article>
+
+                <article>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </article>
+
+                <article>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </article>
+            </section>
+
+            <section>
+                <label>
+                    Skills
+                </label>
+
+                <article>
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML</label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS</label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="js">
+                    <label for="js">JavaScript</label>
+                </article>
+            </section>
+
+            <section>
+                <label for="country">
+                    Country
+                </label>
+
+                <select id="country">
+                    <option>Select Country</option>
+                    <option>India</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                </select>
+            </section>
+
+            <section>
+                <label for="profile">
+                    Upload Profile Picture
+                </label>
+
+                <input type="file" id="profile">
+            </section>
+
+            <section>
+                <label for="website">
+                    Website URL
+                </label>
+
+                <input 
+                    type="url" 
+                    id="website"
+                    placeholder="Enter website URL"
+                >
+            </section>
+
+            <section>
+                <label for="search">
+                    Search Interest
+                </label>
+
+                <input 
+                    type="search" 
+                    id="search"
+                    placeholder="Search"
+                >
+            </section>
+
+            <section>
+                <label for="color">
+                    Favourite Colour
+                </label>
+
+                <input type="color" id="color">
+            </section>
+
+            <section>
+                <label for="range">
+                    Experience Level
+                </label>
+
+                <input 
+                    type="range" 
+                    id="range"
+                    min="0"
+                    max="10"
+                >
+            </section>
+
+            <section>
+                <label for="bio">
+                    Short Bio
+                </label>
+
+                <textarea 
+                    id="bio"
+                    placeholder="Write about yourself"
+                ></textarea>
+            </section>
+
+            <section>
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Reset">
+            </section>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

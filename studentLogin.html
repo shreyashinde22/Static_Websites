@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Login</title>
+
+    <link rel="stylesheet" href="studentLogin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal Login</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="userid">Student ID / Email</label>
+                <input 
+                    type="text" 
+                    id="userid" 
+                    placeholder="Enter ID or Email"
+                >
+            </section>
+
+            <section>
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Enter Password"
+                >
+            </section>
+
+            <section>
+                <label for="account">Account Type</label>
+
+                <select id="account">
+                    <option>Select Account Type</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Administrator</option>
+                </select>
+            </section>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <nav>
+            <a href="ForgotPassword.html">Forgot Password?</a>
+            <a href="Register.html">Register</a>
+        </nav>
+
+    </main>
+
+</body>
+</html>

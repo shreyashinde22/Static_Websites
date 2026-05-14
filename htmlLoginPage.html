@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="htmlLoginPage.css">
+</head>
+<body>
+
+    <header>
+        <h1>Login Page</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="username">
+                    Username
+                </label>
+
+                <input 
+                    type="text" 
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                >
+
+                <small>
+                    Username is required
+                </small>
+            </section>
+
+            <section>
+                <label for="password">
+                    Password
+                </label>
+
+                <input 
+                    type="password" 
+                    id="password"
+                    placeholder="Enter Password"
+                    required
+                >
+
+                <small>
+                    Password is required
+                </small>
+            </section>
+
+            <section class="remember">
+                <input type="checkbox" id="remember">
+
+                <label for="remember">
+                    Remember Me
+                </label>
+            </section>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

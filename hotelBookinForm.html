@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+
+    <link rel="stylesheet" href="hotelBookinForm.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Booking Form</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <section>
+                <label for="fullname">
+                    Guest Name
+                </label>
+
+                <input 
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your name"
+                >
+            </section>
+
+            <section>
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+            </section>
+
+            <section>
+                <label for="checkin">
+                    Check-in Date
+                </label>
+
+                <input 
+                    type="date"
+                    id="checkin"
+                    max="2026-05-09"
+                >
+            </section>
+
+            <section>
+                <label for="checkout">
+                    Check-out Date
+                </label>
+
+                <input 
+                    type="date"
+                    id="checkout"
+                    max="2026-05-09"
+                >
+            </section>
+
+            <section>
+                <label for="room">
+                    Room Type
+                </label>
+
+                <select id="room">
+                    <option>Select Room Type</option>
+                    <option>Single Room</option>
+                    <option>Double Room</option>
+                    <option>Deluxe Room</option>
+                    <option>Suite Room</option>
+                </select>
+            </section>
+
+            <section>
+                <p>Select Amenities</p>
+
+                <article>
+                    <input type="checkbox" id="wifi">
+
+                    <label for="wifi">
+                        Free Wi-Fi
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="breakfast">
+
+                    <label for="breakfast">
+                        Breakfast Included
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="pool">
+
+                    <label for="pool">
+                        Swimming Pool
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="parking">
+
+                    <label for="parking">
+                        Parking Facility
+                    </label>
+                </article>
+
+                <article>
+                    <input type="checkbox" id="gym">
+
+                    <label for="gym">
+                        Gym Access
+                    </label>
+                </article>
+
+            </section>
+
+            <button type="submit">
+                Book Now
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
